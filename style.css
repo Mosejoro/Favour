@@ -1,0 +1,288 @@
+@font-face {
+    font-family: Lato-Italic;
+    src: url( Font/Lato-Italic.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Lato-Italic;
+    scroll-behavior: smooth;
+
+}
+::-webkit-scrollbar{
+    width:  0.9rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    width: 2rem;
+}
+::-webkit-scrollbar-thumb{
+    cursor: pointer; 
+    background-color: lawngreen;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+}
+span{
+    color: limegreen;
+}
+header h1{
+    font-size: 40px;
+}
+
+ul{
+    list-style: none;
+    display: flex ;
+    gap: 20px;
+}
+ul li a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color: wheat;
+}
+.Js, ul li img{
+    width: 45px;
+
+}
+.Jses{
+    display: none;
+}
+.Mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 110vh;
+    width: 370px;
+    z-index: 999;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    justify-content:safe;
+    text-align: center;
+    gap: 20px;
+    backdrop-filter: blur(10px);
+}
+.Mobile ul{
+    margin-top: 100px;
+    width: 100%;
+}
+.Mobile li{
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: transform ease-in-out 0.1s;
+    cursor: pointer;
+}
+.Mobile li:hover{
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    transform: scale(1.4);
+}
+.Mobile li a:hover{
+    color: black;
+}
+header button{
+    padding: 15px;
+    background-color: limegreen;
+    border: none;
+    color: white;
+    border-radius: 70px;
+    border-top-right-radius: 0;
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: wheat;
+}
+section{
+    display: flex;
+    align-items: center;
+    margin: 100px;
+    justify-content: space-between;
+
+}
+.Img, main{
+    width: 50%;
+}
+.Img{
+    text-align: center;
+}
+.Img img{
+    width: 25rem;
+}
+#Main{
+    flex-wrap: wrap;
+}
+section main h1{
+    font-size: 40px;
+    padding: 10px;
+}
+.Save{
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 22px;
+    background-color: limegreen;
+    border: none;
+    border-radius: 7px;
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+    color: white;
+}
+.Save:hover{
+    color: white;
+    background-color: wheat;
+}
+.Company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.Heed{
+    display: flex;
+    text-align: center;
+    text-wrap: wrap;
+    flex-direction: column;
+    margin: 120px;
+    gap: 10px;
+}
+.Cmp{
+    background-color: whitesmoke;
+    box-shadow: 3px 2px 9px black;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform ease-in-out 0.3s;
+}
+.Cmp:hover{
+    transform: scale(1.30);
+}
+.Cmp img{
+    width: 50px;
+    height: 50px;
+}
+.Content{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    background-color: aliceblue;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+}
+.content img{
+    width: 7rem;
+    border-radius:50%;
+    margin-left: -2.4rem;
+}
+.Text{
+    margin-top: -25rem;
+    text-align:right;
+    width: 45%;
+}
+#About{
+    justify-content:space-around;
+    align-items: center;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 3rem;
+}
+#Work{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color:white;
+
+}
+.Card{
+    display: flex;
+    gap: 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform ease 0.3s ;
+}
+.card{
+    background-color: black;
+    box-shadow: 6px 2px 20px black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform ease-out 0.3s;
+}
+.card img{
+    width: 15rem;
+    height: 17rem;
+    cursor: pointer;
+    opacity:0.9;
+
+}
+.card:hover{
+    opacity:1;
+    transform: scale(1.09);
+}
+@media screen and (max-width:820px) {
+    #Main{
+        flex-direction: column-reverse;
+    }
+    .Img img{
+        width: 200px;
+    }
+    main{
+        width: 100%;
+    }
+    .Text{
+        margin-top: 0;
+    }
+    .Mobile{
+        display: none;
+    }
+}
+@media screen and (max-width:525px) {
+    #About{
+        flex-direction: column-reverse;
+    }
+    .Desktop ,.But button{
+        display: none;
+    }
+    .Jses{
+        display: block;
+    }
+    .Img{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Textt{
+        text-align: center;
+        width: 120%;
+    }
+
+}
